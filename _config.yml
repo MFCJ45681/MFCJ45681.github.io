@@ -1,26 +1,39 @@
-# Site Info
+# ======================
+# 网站核心配置 (1/10)
+# ======================
 title: 宜宾市第三中学大观校区
 SEOTitle: 南溪五中(宜宾三中大观校区) | Nanxi No.5 Middle School (Yibin No.3 Middle School Daguan Campus)
-header-img: img/home-bg.jpg
 email: MFCJ45681@outlook.com
 description: "这里是宜宾三中大观校区（原南溪五中）的官网，与你一起发现更大的世界"
+# ======================
+# 网站核心配置 (2/10)
+# ======================
 keywords: "宜宾三中大观校区, ybszdgxq, Nanxi No.5 Middle School, Yibin No.3 Middle School Daguan Campus, 学校官网"
-url: "https://huangxuan.me"  # 替换为实际域名
-baseurl: "" 
-
-# Content Settings
-future: true
+url: "https://www.ybszdgxq.com"  # 必须替换为真实域名
+baseurl: ""
+timezone: Asia/Shanghai  # 中国时区
+# ======================
+# 图片路径配置 (3/10)
+# ======================
+header-img: /assets/img/home-bg.jpg      # 顶部横幅图片
+sidebar-avatar: /assets/img/school-logo.png  # 侧边栏校徽
+favicon: /assets/img/favicon.ico         # 浏览器标签图标
+# ======================
+# 内容设置 (4/10)
+# ======================
+future: false
 permalink: pretty
 paginate: 10
 exclude: 
   - "less"
   - "node_modules"
-  - "Gruntfile.js"
-  - "package.json"
-  - "README.md"
-  - "README.zh.md"
-
-# Markdown Processing
+  - "package*.json"
+  - "README*.md"
+  - "vendor"
+  - "Gemfile*"
+# ======================
+# 处理引擎配置 (5/10)
+# ======================
 markdown: kramdown
 kramdown:
   input: GFM
@@ -31,33 +44,58 @@ kramdown:
     block: 
       line_numbers: true
       start_line: 1
-
-# Social Accounts (示例)
-weibo_username: school_weibo
-zhihu_username: school_zhihu
-github_username: school_github
-
-# Features
+# ======================
+# 社交账号配置 (6/10)
+# ======================
+weibo_username: ybszdgxq_official
+zhihu_username: yibin-san-zhong
+github_username: yibin-school
+twitter_username: ""
+facebook_username: ""
+# ======================
+# 功能特性配置 (7/10)
+# ======================
 anchorjs: true
 sidebar: true
 featured-tags: true
 featured-condition-size: 1
-
-# Analytics (示例)
-google_analytics: UA-XXXXXX-X
-
-# Sidebar Content
+RSS: true
+mathjax: false  # 数学公式支持
+# ======================
+# 分析系统配置 (8/10)
+# ======================
+ga_track_id: "UA-12345678-1"  # Google Analytics ID
+baidu_tongji: ""              # 百度统计ID
+netease_comment: false        # 网易云跟帖
+# ======================
+# 侧边栏与评论 (9/10)
+# ======================
 sidebar-about-description: "宜宾市重点中学 | 省级示范高中"
-sidebar-avatar: /assets/img/school-logo.png  # 替换为实际路径
-
-# Comments (可选)
-disqus_username: your-disqus-shortname  # 替换为实际Disqus账号
-
-# Friends Links
+disqus_username: yibin-school-comment
 friends:
   - title: "宜宾市招生考试网"
     href: "https://www.ybzsb.cn"
   - title: "四川省教育考试院"
     href: "http://www.sceea.cn/"
-  - title: "中国教育部"
-    href: "http://www.moe.gov.cn/"
+# ======================
+# 高级优化配置 (10/10)
+# ======================
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      cache-control: "public, max-age=604800"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+security_headers:
+  enable: true
+  csp:
+    default_src: "'self'"
+    img_src: "'self' data: https:"
+
+sass:
+  style: compressed
