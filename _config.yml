@@ -1,10 +1,10 @@
 # Site settings
 title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+SEOTitle: 南溪五中(宜宾三中大观校区) | Nanxi No.5 Middle School (Yibin No.3 Middle School Daguan Campus)
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
+email: MFCJ45681@outlook.com
+description: "这里是 宜宾三中大观校区;原南溪五中 的官网，与你一起发现更大的世界 | "
+keyword: "宜宾三中大观校区, ybszdgxq, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Nanxi No. 5 Middle School (Yibin No. 3 Middle School Daguan Campus), 博客, 网站, 互联网, Web,"
 url: "https://huangxuan.me" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
