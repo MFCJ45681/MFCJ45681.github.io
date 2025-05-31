@@ -1,1 +1,63 @@
-# Site settings title: 宜宾市第三中学大观校区 SEOTitle: 南溪五中(宜宾三中大观校区) | Nanxi No.5 Middle School (Yibin No.3 Middle School Daguan Campus) header-img: img/home-bg.jpg email: MFCJ45681@outlook.com description: "这里是 宜宾三中大观校区;原南溪五中 的官网，与你一起发现更大的世界" keyword: "宜宾三中大观校区, ybszdgxq , Nanxi No. 5 Middle School (Yibin No. 3 Middle School Daguan Campus), 网站, 互联网, Web," url: "https://huangxuan.me" # your host, for absolute URL baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog' # Publish posts or collection documents with a future date. future: true # SNS settings RSS: false weibo_username: huxpro zhihu_username: huxpro github_username: huxpro twitter_username: huxpro #facebook_username:  huxpro #linkedin_username:  firstname-lastname-idxxxx # Build settings # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead. highlighter: rouge permalink: pretty paginate: 10 exclude: [ "less", "node_modules", "Gruntfile.js", "package.json", "README.md", "README.zh.md", ] anchorjs: true # if you want to customize anchor. check out line:181 of `post.html` # If you have timezone issue (e.g. #68) in China, uncomment to use this: #timezone: CN # Gems # from PR#40, to support local preview for Jekyll 3.0 # make sure you have this gem installed # `$ gem install jekyll-paginate` plugins: [jekyll-paginate] # Markdown settings # replace redcarpet to kramdown, # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown # document: http://jekyllrb.com/docs/configuration/#kramdown markdown: kramdown kramdown: input: GFM # use Github Flavored Markdown !important syntax_highlighter_opts: span: line_numbers: false block: line_numbers: true start_line: 1 # Disqus settings disqus_username: hux # Netease settings netease_comment: false # Analytics settings # Baidu Analytics # ba_track_id: [your track id] # Google Analytics ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx ga_domain: huangxuan.me # Sidebar settings sidebar: true # whether or not using Sidebar. sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta" sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/` # Featured Tags featured-tags: true # whether or not using Feature-Tags featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value # Progressive Web Apps chrome-tab-theme-color: "#000000" service-worker: true # MathJax rendering for layout:page (e.g. post preview) page-mathjax: false # Friends friends: [ { title: "乱序（Midare）", href: "http://mida.re/" }, { title: "Ebn Zhang", href: "https://ebnbin.dev/" }, { title: "Kun Qian", href: "http://kunq.me" }, { title: "Sherry Woo", href: "https://sherrywoo.me/" }, { title: "SmdCn", href: "http://blog.smdcn.net" }, { title: "JiyinYiyong", href: "http://tiye.me/" }, { title: "DHong Say", href: "http://dhong.co" }, { title: "尹峰以为", href: "http://ingf.github.io/" }, ]
+# Site Info
+title: 宜宾市第三中学大观校区
+SEOTitle: 南溪五中(宜宾三中大观校区) | Nanxi No.5 Middle School (Yibin No.3 Middle School Daguan Campus)
+header-img: img/home-bg.jpg
+email: MFCJ45681@outlook.com
+description: "这里是宜宾三中大观校区（原南溪五中）的官网，与你一起发现更大的世界"
+keywords: "宜宾三中大观校区, ybszdgxq, Nanxi No.5 Middle School, Yibin No.3 Middle School Daguan Campus, 学校官网"
+url: "https://huangxuan.me"  # 替换为实际域名
+baseurl: "" 
+
+# Content Settings
+future: true
+permalink: pretty
+paginate: 10
+exclude: 
+  - "less"
+  - "node_modules"
+  - "Gruntfile.js"
+  - "package.json"
+  - "README.md"
+  - "README.zh.md"
+
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span: 
+      line_numbers: false
+    block: 
+      line_numbers: true
+      start_line: 1
+
+# Social Accounts (示例)
+weibo_username: school_weibo
+zhihu_username: school_zhihu
+github_username: school_github
+
+# Features
+anchorjs: true
+sidebar: true
+featured-tags: true
+featured-condition-size: 1
+
+# Analytics (示例)
+google_analytics: UA-XXXXXX-X
+
+# Sidebar Content
+sidebar-about-description: "宜宾市重点中学 | 省级示范高中"
+sidebar-avatar: /assets/img/school-logo.png  # 替换为实际路径
+
+# Comments (可选)
+disqus_username: your-disqus-shortname  # 替换为实际Disqus账号
+
+# Friends Links
+friends:
+  - title: "宜宾市招生考试网"
+    href: "https://www.ybzsb.cn"
+  - title: "四川省教育考试院"
+    href: "http://www.sceea.cn/"
+  - title: "中国教育部"
+    href: "http://www.moe.gov.cn/"
